@@ -1,48 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090c14">
-  <meta name="description" content="Qwitty (Квитти) — независимые цифровые проекты QwittyDev. Узнайте о QwittyGram, Telegram-клиенте для Android, и других разработках.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://qwittydev.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Qwitty — Квитти | QwittyDev">
-  <meta property="og:description" content="QwittyGram и другие цифровые проекты QwittyDev.">
-  <meta property="og:url" content="https://qwittydev.github.io/">
-  <title>Qwitty — Квитти | Официальный сайт QwittyDev</title>
-  <style>
-    :root{color-scheme:dark;--text:#f5f7ff;--muted:#a5aec4;--line:#ffffff20}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:#090c14;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse 55% 45% at 50% 23%,#5463f82b,transparent 75%),radial-gradient(ellipse 40% 45% at 85% 75%,#17b9bd13,transparent 75%)}
-    .wrap{position:relative;max-width:1040px;margin:auto;padding:0 25px}header{display:flex;align-items:center;justify-content:space-between;padding:28px 0} .brand{display:flex;align-items:center;gap:11px;font-size:18px;font-weight:800;letter-spacing:-.5px}.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#9ca6ff,#6e7bfa);color:#080b19;font-size:22px;font-weight:900}.header-note{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8d96b0}
-    main{padding:105px 0 85px;text-align:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #a0aafa35;background:#a0aafa0c;border-radius:99px;padding:9px 15px;color:#bec7ff;font-size:12px;font-weight:650;letter-spacing:1.4px;text-transform:uppercase}.dot{height:7px;width:7px;background:#99a6ff;border-radius:50%;box-shadow:0 0 13px #99a6ff}
-    h1{font-size:clamp(64px,12vw,124px);letter-spacing:-.085em;line-height:1.08;margin:25px 0 12px;font-weight:850}.gradient{background:linear-gradient(110deg,#fff 20%,#a8b1ff 65%,#8fe6df);-webkit-background-clip:text;background-clip:text;color:transparent}.sub{font-size:clamp(19px,3vw,27px);font-weight:500;color:#d4daee;letter-spacing:-.5px;margin:0 0 22px}.intro{max-width:570px;margin:0 auto;color:var(--muted);font-size:16px;line-height:1.9}
-    .section-label{font-size:12px;text-transform:uppercase;letter-spacing:2.3px;color:#929cb9;text-align:left;margin:0 0 18px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:100px}.card{text-align:left;padding:30px;border:1px solid var(--line);background:linear-gradient(140deg,#ffffff0b,#ffffff04);border-radius:22px;backdrop-filter:blur(10px);transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-4px);border-color:#9ca6ff70}.symbol{display:grid;place-items:center;width:44px;height:44px;background:#a6b1ff16;color:#b5c0ff;border:1px solid #a6b1ff27;border-radius:13px;font-size:22px}.card h2{font-size:22px;letter-spacing:-.5px;margin:24px 0 9px}.card p{color:var(--muted);font-size:14px;line-height:1.85;margin:0}.status{display:inline-block;color:#a9e8db;background:#66d8c716;border:1px solid #66d8c72a;padding:5px 10px;border-radius:30px;font-size:11px;margin-top:20px}
-    footer{border-top:1px solid var(--line);padding:27px 0 40px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#7f8aa4;font-size:12px}footer strong{color:#c8d0e5;font-weight:650}
-    @media(max-width:620px){header{padding:20px 0}.header-note{font-size:10px;letter-spacing:1px}main{padding:95px 0 75px}.cards{grid-template-columns:1fr;margin-bottom:65px}.card{padding:25px}footer{flex-direction:column;text-align:center}.intro{font-size:15px}}
-    @media(prefers-reduced-motion:no-preference){main,.cards{animation:rise .75s both}.cards{animation-delay:.15s}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}}
-  </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#090a0c" name="theme-color"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="Qwitty (Квитти) — QwittyGram для Android и Qwitty Bot для Telegram. Описание возможностей, версии приложения и ответы на вопросы." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="Qwitty" name="author"/>
+<meta content="website" property="og:type"/>
+<meta content="ru_RU" property="og:locale"/>
+<meta content="Qwitty" property="og:site_name"/>
+<meta content="Qwitty — QwittyGram и Qwitty Bot" property="og:title"/>
+<meta content="QwittyGram для Android и Qwitty Bot для Telegram. Приложения, обновления и информация." property="og:description"/>
+<meta content="https://qwittydev.github.io/" property="og:url"/>
+<meta content="https://qwittydev.github.io/assets/og-cover.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://qwittydev.github.io/" rel="canonical"/>
+<link href="./assets/favicon.png" rel="icon" type="image/png"/>
+<link href="./assets/favicon.png" rel="apple-touch-icon"/>
+<link as="image" href="./assets/qwittygram.webp" rel="preload" type="image/webp"/>
+<title>Qwitty — Квитти | QwittyGram и Qwitty Bot</title>
+<link href="./style.css" rel="stylesheet"/>
+<script defer="" src="./script.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Qwitty","alternateName":["Квитти","QwittyGram"],"url":"https://qwittydev.github.io/","description":"QwittyGram для Android и Qwitty Bot для Telegram"}</script>
 </head>
 <body>
-  <div class="wrap">
-    <header><div class="brand"><div class="mark" aria-hidden="true">Q</div>QwittyDev</div><div class="header-note">Independent projects</div></header>
-    <main>
-      <div class="eyebrow"><span class="dot"></span> Добро пожаловать</div>
-      <h1><span class="gradient">Qwitty.</span></h1>
-      <p class="sub">Идеи превращаются в проекты.</p>
-      <p class="intro">Qwitty (Квитти) — пространство цифровых разработок QwittyDev. Мы экспериментируем с технологиями, создаём полезные инструменты и развиваем собственные приложения.</p>
-    </main>
-    <section aria-label="Проекты Qwitty">
-      <p class="section-label">Наши проекты</p>
-      <div class="cards">
-        <article class="card"><div class="symbol" aria-hidden="true">✦</div><h2>QwittyGram</h2><p>КвиттиГрам — альтернативный Telegram-клиент для Android с дополнительными возможностями персонализации. Проект находится в развитии.</p><span class="status">В разработке</span></article>
-        <article class="card"><div class="symbol" aria-hidden="true">⌘</div><h2>Qwitty Bot</h2><p>Инструменты автоматизации Telegram: управление чатами, полезные команды и дополнительные функции для повседневных задач.</p><span class="status">Развивается</span></article>
-      </div>
-    </section>
-    <footer><span><strong>QwittyDev</strong> · Независимые цифровые проекты</span><span>© <span id="year">2026</span> Qwitty</span></footer>
-  </div>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<a class="skip-link" href="#content">Перейти к содержимому</a>
+<div aria-hidden="true" class="scroll-progress"></div>
+<header class="header" id="top">
+<div class="container header-inner">
+<a aria-label="Qwitty — главная" class="brand" href="#top">
+<img alt="" height="38" src="./assets/qwittygram.webp" width="38"/><span>Qwitty</span>
+</a>
+<nav aria-label="Основная навигация" class="nav">
+<a href="#products">Приложения</a>
+<a href="#qwittygram">QwittyGram</a>
+<a href="#qwittybot">Qwitty Bot</a>
+<a href="#faq">Вопросы</a>
+</nav>
+<div class="nav-right">
+<a class="header-download apk-link" download="QwittyGram.apk" href="./QwittyGram.apk">Скачать APK <span aria-hidden="true">↓</span></a>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Открыть меню" class="menu-toggle" type="button"><span></span><span></span></button>
+</div>
+</div>
+<nav aria-label="Мобильное меню" class="mobile-nav" hidden="" id="mobile-nav">
+<a href="#products">Приложения</a><a href="#qwittygram">QwittyGram</a><a href="#qwittybot">Qwitty Bot</a><a href="#faq">Вопросы</a><a class="apk-link" download="QwittyGram.apk" href="./QwittyGram.apk">Скачать APK ↓</a>
+</nav>
+</header>
+<main id="content">
+<section aria-labelledby="hero-heading" class="hero container">
+<div class="hero-copy fade-in">
+<div class="section-kicker"><span class="signal"></span> QWITTY · ОФИЦИАЛЬНЫЙ САЙТ</div>
+<h1 id="hero-heading">Qwitty<span class="hero-separator">.</span><br/><span>Для Telegram.</span></h1>
+<p class="hero-description">QwittyGram — клиент Telegram для Android с дополнительными настройками. Qwitty Bot — инструменты для управления чатами. Всё необходимое о Qwitty в одном месте.</p>
+<div class="hero-actions">
+<a class="btn btn-white apk-link" download="QwittyGram.apk" href="./QwittyGram.apk">Скачать QwittyGram <span aria-hidden="true" class="download-icon">↓</span></a>
+<a class="btn btn-dark" href="#products">Подробнее <span aria-hidden="true">↗</span></a>
+</div>
+<div aria-label="Направления Qwitty" class="hero-meta"><span><span class="meta-bullet"></span> QwittyGram <small>Android</small></span><span class="hero-meta-divider"></span><span><span class="meta-bullet"></span> Qwitty Bot <small>Telegram</small></span></div>
+</div>
+<div aria-label="Логотип Qwitty" class="hero-image fade-in">
+<div class="hero-image-top"><span>QWITTY / DIGITAL</span><span>2026</span></div>
+<div class="orb orb-one"></div><div class="orb orb-two"></div>
+<img alt="Логотип Qwitty — белый бумажный самолётик в кольце" height="560" src="./assets/qwittygram.webp" width="560"/>
+<div class="hero-image-bottom"><span>QWITTYGRAM</span><span>ANDROID</span></div>
+</div>
+</section>
+<div class="container"><div class="fine-divider"></div></div>
+<section class="section container products-section" id="products">
+<div class="section-head reveal"><div><p class="section-kicker">01 / QWITTY</p><h2>Приложения<span class="muted-period">.</span></h2></div><p class="section-intro">QwittyGram для Android и Qwitty Bot для Telegram. Выберите нужное приложение и узнайте, что оно умеет.</p></div>
+<div class="product-cards">
+<article class="product-card card-gram reveal">
+<div class="card-top"><span>01 / ANDROID</span><span class="card-status"><span class="mini-dot"></span> Preview</span></div>
+<div class="card-art gram-art"><div class="art-ring"></div><img alt="Логотип QwittyGram" height="300" loading="lazy" src="./assets/qwittygram.webp" width="300"/></div>
+<div class="card-content"><p class="overline">TELEGRAM CLIENT · ANDROID</p><h3>QwittyGram</h3><p>Telegram-клиент для Android с собственным оформлением, дополнительными настройками и возможностями. Доступны предварительные версии.</p>
+<div class="chips"><span>Android</span><span>Кастомизация</span><span>Дополнительные функции</span></div>
+<a class="card-action apk-link" download="QwittyGram.apk" href="./QwittyGram.apk">Скачать APK <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="product-card card-bot reveal" id="qwittybot">
+<div class="card-top"><span>02 / TELEGRAM</span><span class="card-status">Telegram Bot</span></div>
+<div class="card-art bot-art"><div class="art-ring"></div><img alt="Логотип Qwitty Bot — белый робокот" height="300" loading="lazy" src="./assets/qwittybot.webp" width="300"/></div>
+<div class="card-content"><p class="overline">TELEGRAM · COMMUNITY TOOLS</p><h3>Qwitty Bot</h3><p>Telegram-бот для модерации чатов, борьбы со спамом и автоматизации повседневных задач сообщества.</p>
+<div class="chips"><span>Модерация</span><span>Антиспам</span><span>Автоматизация</span></div>
+<a class="card-action" href="https://t.me/Qwitty_bot" rel="noopener noreferrer" target="_blank">Открыть Qwitty Bot <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+</div>
+</section>
+<section class="spotlight-section" id="qwittygram">
+<div class="container spotlight-layout">
+<div class="spotlight-copy reveal">
+<p class="section-kicker">02 — QWITTYGRAM</p>
+<h2>QwittyGram.<br/><span>Больше настроек.</span></h2>
+<p class="spotlight-lead">Знакомый интерфейс Telegram и дополнительные возможности для повседневного общения. QwittyGram продолжает получать изменения и исправления.</p>
+<a class="text-arrow apk-link" download="QwittyGram.apk" href="./QwittyGram.apk">Загрузить версию Preview <span aria-hidden="true">↗</span></a>
+</div>
+<div class="spotlight-panels reveal">
+<div class="feature-panel"><span class="feature-number">01</span><div class="feature-icon">◎</div><h3>Собственный интерфейс</h3><p>Оформление и настройки QwittyGram с акцентом на удобство.</p></div>
+<div class="feature-panel"><span class="feature-number">02</span><div class="feature-icon">⌘</div><h3>Дополнительные инструменты</h3><p>Возможности для более гибкой работы с Telegram.</p></div>
+<div class="feature-panel"><span class="feature-number">03</span><div class="feature-icon">↗</div><h3>Постепенное развитие</h3><p>Новые версии с исправлениями и улучшениями по мере готовности.</p></div>
+</div>
+</div>
+</section>
+<section class="section container process-section" id="development">
+<div class="section-head reveal"><div><p class="section-kicker">03 / ОБНОВЛЕНИЯ</p><h2>Версии и развитие<span class="muted-period">.</span></h2></div><p class="section-intro">Сначала тестирование и исправления, затем стабильный выпуск QwittyGram.</p></div>
+<div class="process-grid">
+<article class="process-card reveal"><span class="process-num">01</span><div><h3>Тестовые версии</h3><p>Предварительные сборки для проверки интерфейса и основных возможностей.</p></div></article>
+<article class="process-card reveal"><span class="process-num">02</span><div><h3>Исправления</h3><p>Доработка деталей, повышение стабильности и устранение обнаруженных ошибок.</p></div></article>
+<article class="process-card reveal"><span class="process-num">03</span><div><h3>Полноценный релиз</h3><p>Стабильная версия будет доступна после завершения тестирования.</p></div></article>
+</div>
+<div class="notice-inline reveal"><div class="notice-indicator"></div><p>На сайте может размещаться предварительная APK-сборка. Перед установкой учитывайте, что часть функций ещё дорабатывается.</p></div>
+</section>
+<section aria-label="О Qwitty" class="identity-section">
+<div class="container identity-layout">
+<div class="identity-brand reveal"><img alt="Логотип Qwitty" height="154" loading="lazy" src="./assets/qwittygram.webp" width="154"/><span>Qwitty</span></div>
+<div class="identity-copy reveal"><p class="section-kicker">О QWITTY</p><h2>Всё в одном месте.</h2><p>Qwitty объединяет два направления: QwittyGram для Android и Qwitty Bot для Telegram. Здесь собрана информация о возможностях, доступных версиях и обновлениях.</p></div>
+</div>
+</section>
+<section class="section container faq-section" id="faq">
+<div class="section-head reveal"><div><p class="section-kicker">04 / ИНФОРМАЦИЯ</p><h2>Вопросы и ответы<span class="muted-period">.</span></h2></div><p class="section-intro">Основная информация об установке, обновлениях и возможностях Qwitty.</p></div>
+<div class="faq-list reveal">
+<details><summary>На каких устройствах работает QwittyGram?<span aria-hidden="true" class="faq-symbol">+</span></summary><div class="faq-answer">QwittyGram предназначен для устройств на Android. Поддерживаемые версии Android могут отличаться в зависимости от сборки.</div></details>
+<details><summary>Как установить QwittyGram?<span aria-hidden="true" class="faq-symbol">+</span></summary><div class="faq-answer">Скачайте APK с этого сайта, откройте его на Android и подтвердите установку. При необходимости система попросит разрешить установку из выбранного источника.</div></details>
+<details><summary>Можно ли использовать свой аккаунт Telegram?<span aria-hidden="true" class="faq-symbol">+</span></summary><div class="faq-answer">Да, QwittyGram работает как альтернативный клиент Telegram. Вход выполняется через авторизацию Telegram, которая может потребовать подтверждение аккаунта.</div></details>
+<details><summary>Что означает версия Preview?<span aria-hidden="true" class="faq-symbol">+</span></summary><div class="faq-answer">Это предварительная сборка. Отдельные функции могут меняться или работать нестабильно. Стабильный выпуск появится после тестирования.</div></details>
+<details><summary>Как узнать о новой версии?<span aria-hidden="true" class="faq-symbol">+</span></summary><div class="faq-answer">Актуальная сборка QwittyGram будет размещаться здесь. Проверяйте версию приложения перед установкой обновления.</div></details>
+<details><summary>Нужно ли устанавливать Telegram отдельно?<span aria-hidden="true" class="faq-symbol">+</span></summary><div class="faq-answer">Для обычной работы QwittyGram отдельное приложение Telegram не требуется. При этом оба клиента могут использовать один и тот же аккаунт.</div></details>
+<details><summary>Для чего нужен Qwitty Bot?<span aria-hidden="true" class="faq-symbol">+</span></summary><div class="faq-answer">Qwitty Bot помогает с модерацией Telegram-сообществ, антиспамом и автоматизацией действий в чатах.</div></details>
+<details><summary>Как открыть Qwitty Bot?<span aria-hidden="true" class="faq-symbol">+</span></summary><div class="faq-answer">Перейдите в Telegram по адресу <a href="https://t.me/Qwitty_bot" rel="noopener noreferrer" target="_blank">@Qwitty_bot ↗</a> и нажмите «Запустить».</div></details>
+</div>
+</section>
+
+</main>
+<footer class="footer">
+<div class="container footer-main">
+<a class="footer-brand" href="#top"><img alt="" height="42" src="./assets/qwittygram.webp" width="42"/><span>Qwitty<small>QWITTY</small></span></a>
+<nav aria-label="Ссылки внизу сайта" class="footer-links"><a href="#products">Приложения</a><a href="#qwittygram">QwittyGram</a><a href="https://t.me/Qwitty_bot" rel="noopener noreferrer" target="_blank">Qwitty Bot ↗</a><a href="#faq">Вопросы</a><a href="https://t.me/QwittySupport" rel="noopener noreferrer" target="_blank">Техподдержка ↗</a></nav>
+</div>
+<div class="container footer-bottom"><span>© <span id="year">2026</span> Qwitty</span><span>Этот сайт и приложения ещё находятся в разработке.</span><a href="#top">Наверх ↑</a></div>
+</footer>
+<div aria-live="polite" class="toast" hidden="" id="toast" role="status"></div>
 </body>
 </html>
