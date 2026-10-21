@@ -1,42 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Qwitty — Official Website</title>
-  <meta name="description" content="QwittyGram — Telegram-клиент для Android. Новости, загрузки и документация.">
+  <meta name="theme-color" content="#090c14">
+  <meta name="description" content="Qwitty (Квитти) — независимые цифровые проекты QwittyDev. Узнайте о QwittyGram, Telegram-клиенте для Android, и других разработках.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://qwittydev.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Qwitty — Квитти | QwittyDev">
+  <meta property="og:description" content="QwittyGram и другие цифровые проекты QwittyDev.">
+  <meta property="og:url" content="https://qwittydev.github.io/">
+  <title>Qwitty — Квитти | Официальный сайт QwittyDev</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #101218;
-      color: white;
-      text-align: center;
-    }
-    nav { padding: 24px; font-weight: bold; }
-    main { padding: 90px 20px; }
-    h1 { font-size: 48px; }
-    p { color: #aeb6c4; }
-    a.button {
-      display: inline-block;
-      background: white;
-      color: #101218;
-      padding: 14px 24px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    :root{color-scheme:dark;--text:#f5f7ff;--muted:#a5aec4;--line:#ffffff20}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:#090c14;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse 55% 45% at 50% 23%,#5463f82b,transparent 75%),radial-gradient(ellipse 40% 45% at 85% 75%,#17b9bd13,transparent 75%)}
+    .wrap{position:relative;max-width:1040px;margin:auto;padding:0 25px}header{display:flex;align-items:center;justify-content:space-between;padding:28px 0} .brand{display:flex;align-items:center;gap:11px;font-size:18px;font-weight:800;letter-spacing:-.5px}.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#9ca6ff,#6e7bfa);color:#080b19;font-size:22px;font-weight:900}.header-note{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8d96b0}
+    main{padding:105px 0 85px;text-align:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #a0aafa35;background:#a0aafa0c;border-radius:99px;padding:9px 15px;color:#bec7ff;font-size:12px;font-weight:650;letter-spacing:1.4px;text-transform:uppercase}.dot{height:7px;width:7px;background:#99a6ff;border-radius:50%;box-shadow:0 0 13px #99a6ff}
+    h1{font-size:clamp(64px,12vw,124px);letter-spacing:-.085em;line-height:1.08;margin:25px 0 12px;font-weight:850}.gradient{background:linear-gradient(110deg,#fff 20%,#a8b1ff 65%,#8fe6df);-webkit-background-clip:text;background-clip:text;color:transparent}.sub{font-size:clamp(19px,3vw,27px);font-weight:500;color:#d4daee;letter-spacing:-.5px;margin:0 0 22px}.intro{max-width:570px;margin:0 auto;color:var(--muted);font-size:16px;line-height:1.9}
+    .section-label{font-size:12px;text-transform:uppercase;letter-spacing:2.3px;color:#929cb9;text-align:left;margin:0 0 18px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:100px}.card{text-align:left;padding:30px;border:1px solid var(--line);background:linear-gradient(140deg,#ffffff0b,#ffffff04);border-radius:22px;backdrop-filter:blur(10px);transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-4px);border-color:#9ca6ff70}.symbol{display:grid;place-items:center;width:44px;height:44px;background:#a6b1ff16;color:#b5c0ff;border:1px solid #a6b1ff27;border-radius:13px;font-size:22px}.card h2{font-size:22px;letter-spacing:-.5px;margin:24px 0 9px}.card p{color:var(--muted);font-size:14px;line-height:1.85;margin:0}.status{display:inline-block;color:#a9e8db;background:#66d8c716;border:1px solid #66d8c72a;padding:5px 10px;border-radius:30px;font-size:11px;margin-top:20px}
+    footer{border-top:1px solid var(--line);padding:27px 0 40px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#7f8aa4;font-size:12px}footer strong{color:#c8d0e5;font-weight:650}
+    @media(max-width:620px){header{padding:20px 0}.header-note{font-size:10px;letter-spacing:1px}main{padding:95px 0 75px}.cards{grid-template-columns:1fr;margin-bottom:65px}.card{padding:25px}footer{flex-direction:column;text-align:center}.intro{font-size:15px}}
+    @media(prefers-reduced-motion:no-preference){main,.cards{animation:rise .75s both}.cards{animation-delay:.15s}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}}
   </style>
 </head>
 <body>
-  <nav>QwittyDev</nav>
-  <main>
-    <h1>Welcome to Qwitty</h1>
-    <p>QwittyGram — Telegram client for Android</p>
-    <a class="button" href="https://github.com/QwittyDev">
-      View on GitHub
-    </a>
-  </main>
+  <div class="wrap">
+    <header><div class="brand"><div class="mark" aria-hidden="true">Q</div>QwittyDev</div><div class="header-note">Independent projects</div></header>
+    <main>
+      <div class="eyebrow"><span class="dot"></span> Добро пожаловать</div>
+      <h1><span class="gradient">Qwitty.</span></h1>
+      <p class="sub">Идеи превращаются в проекты.</p>
+      <p class="intro">Qwitty (Квитти) — пространство цифровых разработок QwittyDev. Мы экспериментируем с технологиями, создаём полезные инструменты и развиваем собственные приложения.</p>
+    </main>
+    <section aria-label="Проекты Qwitty">
+      <p class="section-label">Наши проекты</p>
+      <div class="cards">
+        <article class="card"><div class="symbol" aria-hidden="true">✦</div><h2>QwittyGram</h2><p>КвиттиГрам — альтернативный Telegram-клиент для Android с дополнительными возможностями персонализации. Проект находится в развитии.</p><span class="status">В разработке</span></article>
+        <article class="card"><div class="symbol" aria-hidden="true">⌘</div><h2>Qwitty Bot</h2><p>Инструменты автоматизации Telegram: управление чатами, полезные команды и дополнительные функции для повседневных задач.</p><span class="status">Развивается</span></article>
+      </div>
+    </section>
+    <footer><span><strong>QwittyDev</strong> · Независимые цифровые проекты</span><span>© <span id="year">2026</span> Qwitty</span></footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
